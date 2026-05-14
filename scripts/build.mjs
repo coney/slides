@@ -8,6 +8,12 @@ const decks = [
     description: '多 PPT 展示结构示例',
     entry: 'decks/demo/slides.md',
   },
+  {
+    slug: 'trump-china-visits',
+    title: '川普访华：从故宫到天坛',
+    description: '2017 记录、2026 动态与几点观察',
+    entry: 'decks/trump-china-visits/slides.md',
+  },
 ]
 
 rmSync('dist', { recursive: true, force: true })
