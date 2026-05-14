@@ -3,9 +3,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "slidev --open",
-    "build": "slidev build --base /slides/",
-    "export": "slidev export"
+    "dev": "slidev decks/demo/slides.md --open",
+    "dev:demo": "slidev decks/demo/slides.md --open",
+    "build": "node scripts/build.mjs",
+    "export": "slidev export decks/demo/slides.md"
   },
   "dependencies": {
     "@slidev/cli": "latest",

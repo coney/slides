@@ -4,3 +4,6 @@ node_modules
 dist
 *.local
 .DS_Store
+
+# Slidev nested build output
+decks/**/dist
