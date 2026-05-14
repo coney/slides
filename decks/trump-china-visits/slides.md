@@ -1,20 +1,288 @@
 ---
 theme: seriph
-background: https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1600&auto=format&fit=crop
 title: 川普访华：从故宫到天坛
-class: text-center
+class: cover
 drawings:
   persist: false
 transition: slide-left
 mdc: true
 ---
 
-# 川普访华：从故宫到天坛
+<style>
+.slidev-layout { background: #0b1020; color: #f8fafc; }
+.slidev-layout h1 { font-weight: 900; letter-spacing: -0.05em; line-height: 0.98; }
+.slidev-layout h2 { font-weight: 800; letter-spacing: -0.03em; }
+.slidev-layout p, .slidev-layout li { color: #dbeafe; }
+.cover {
+  background:
+    linear-gradient(90deg, rgba(5,10,24,.92) 0%, rgba(5,10,24,.72) 42%, rgba(5,10,24,.20) 100%),
+    url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1800&auto=format&fit=crop') center/cover;
+}
+.section-red {
+  background:
+    linear-gradient(135deg, rgba(127,29,29,.92), rgba(15,23,42,.94)),
+    url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?q=80&w=1800&auto=format&fit=crop') center/cover;
+}
+.section-blue {
+  background:
+    linear-gradient(135deg, rgba(15,23,42,.96), rgba(30,64,175,.82)),
+    url('https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?q=80&w=1800&auto=format&fit=crop') center/cover;
+}
+.hero-title { font-size: 72px; max-width: 760px; }
+.kicker { color: #fbbf24; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.glass { background: rgba(15,23,42,.68); border: 1px solid rgba(255,255,255,.16); border-radius: 24px; padding: 28px; box-shadow: 0 24px 80px rgba(0,0,0,.34); backdrop-filter: blur(8px); }
+.card { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); border-radius: 22px; padding: 22px; }
+.big-number { font-size: 72px; font-weight: 900; color: #fbbf24; line-height: 1; }
+.photo { border-radius: 26px; box-shadow: 0 28px 80px rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.18); object-fit: cover; width: 100%; height: 420px; }
+.photo-small { border-radius: 20px; object-fit: cover; width: 100%; height: 180px; }
+.caption { color: #94a3b8; font-size: 12px; margin-top: 8px; }
+.timeline { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: start; }
+.timeline .date { color: #fbbf24; font-weight: 800; }
+.timeline .event { border-left: 2px solid rgba(251,191,36,.45); padding: 0 0 18px 18px; }
+.badge { display:inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(251,191,36,.16); color:#fde68a; font-size: 13px; font-weight:700; }
+.grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grid-2 { display:grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.quote { font-size: 30px; line-height: 1.35; color: #fff; font-weight: 750; }
+.muted { color: #93c5fd; }
+</style>
 
-2017 记录、2026 动态与几点观察
+<div class="kicker">China · U.S. · Diplomacy</div>
 
-<div class="pt-8 opacity-75">
-基于公开资料整理 · 更新于 2026-05-14
+# 川普访华：<br/>从故宫到天坛
+
+<div class="text-2xl mt-6 text-blue-100 max-w-2xl">
+2017 的故宫礼遇，2026 的天坛会谈：两次访问，看中美关系如何从“合作期待”走向“竞争管理”。
+</div>
+
+<div class="mt-12 badge">公开资料整理 · 2026-05-14</div>
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1584646098378-0874589d76b1?q=80&w=1400&auto=format&fit=crop
+class: section-red
+---
+
+# 先给结论
+
+<div class="glass mt-8">
+<div class="quote">
+两次访华最像两张“关系体检片”：<br/>
+2017 看见的是礼遇和订单，<br/>
+2026 看见的是风险和边界。
+</div>
+</div>
+
+<div class="grid-2 mt-8">
+<div class="card">
+<div class="badge">2017</div>
+<h2>高规格礼遇</h2>
+<p>故宫、京剧、晚宴、大额经贸协议，重点是把合作氛围做足。</p>
+</div>
+<div class="card">
+<div class="badge">2026</div>
+<h2>高压下稳定</h2>
+<p>贸易、AI、台湾、伊朗、供应链，重点是避免失控和建立沟通。</p>
+</div>
+</div>
+
+---
+
+# 时间线：两次访问，一条关系曲线
+
+<div class="timeline mt-8">
+  <div class="date">2017.11.08</div><div class="event"><b>抵达北京</b><br><span class="muted">开启首次总统任内访华，故宫成为第一幕。</span></div>
+  <div class="date">2017.11.09</div><div class="event"><b>会谈 + 企业活动</b><br><span class="muted">人民大会堂会谈，宣布超 2500 亿美元量级商业/投资协议。</span></div>
+  <div class="date">2018 起</div><div class="event"><b>关系转向摩擦</b><br><span class="muted">关税战、科技限制、供应链重组逐渐成为主线。</span></div>
+  <div class="date">2026.05.13</div><div class="event"><b>再度抵京</b><br><span class="muted">时隔近九年，第二任期内再次访华。</span></div>
+  <div class="date">2026.05.14</div><div class="event"><b>会谈后同游天坛</b><br><span class="muted">议题升级到贸易、AI、台湾、伊朗与关键供应链。</span></div>
+</div>
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+# 2017：故宫外交
+
+<div class="badge">Forbidden City</div>
+
+- 参观故宫前三殿
+- 茶叙、文物展示、京剧表演
+- 高规格晚宴与强烈历史象征
+- 川普展示外孙女中文视频，成为传播点
+
+<div class="glass mt-8">
+故宫这类场景不是背景板，而是外交语言：它把一次现实谈判放进“文明、历史、礼遇”的叙事里。
+</div>
+
+::right::
+
+<img class="photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Forbidden_City_(May_2017).jpg" />
+<div class="caption">图：故宫 / Wikimedia Commons</div>
+
+---
+layout: image-left
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/President_Trump_at_Welcome_Ceremony,_Beijing,_November_2017_(38227496126).png
+---
+
+# 2017：订单很大，分歧也很大
+
+<div class="big-number">$250B+</div>
+
+公开资料显示，2017 年访问期间，双方宣布/签署超过 **2500 亿美元** 量级商业与投资协议。
+
+<div class="grid-3 mt-8">
+<div class="card">能源</div>
+<div class="card">航空</div>
+<div class="card">农业</div>
+<div class="card">制造业</div>
+<div class="card">汽车</div>
+<div class="card">工业设备</div>
+</div>
+
+<div class="mt-6 muted">
+但“签单”并没有消除贸易逆差、市场准入、产业政策等结构性问题。
+</div>
+
+---
+class: section-blue
+---
+
+# 2017 之后：访问窗口关闭，竞争窗口打开
+
+<div class="grid-3 mt-10">
+<div class="glass">
+<h2>关税</h2>
+<p>从贸易逆差争议走向大规模关税攻防。</p>
+</div>
+<div class="glass">
+<h2>科技</h2>
+<p>芯片、AI、出口管制成为中美关系新主轴。</p>
+</div>
+<div class="glass">
+<h2>供应链</h2>
+<p>“效率优先”让位于安全、韧性与去风险。</p>
+</div>
+</div>
+
+<div class="quote mt-12">
+回看 2017，最关键的不是当时有多热烈，<br/>而是它没能阻止后来的结构性转向。
+</div>
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+# 2026：重返北京
+
+<div class="badge">Second visit</div>
+
+- 5 月 13 日晚抵达北京
+- 5 月 14 日人民大会堂会谈
+- 会谈持续逾 2 小时
+- 会谈后同游天坛
+- 议题覆盖贸易、AI、台湾、伊朗等
+
+<div class="glass mt-8">
+这一次的关键词不是“蜜月”，而是：<b>稳定、边界、风险管理。</b>
+</div>
+
+::right::
+
+<img class="photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/(Temple_of_heaven)_Beijing_-_China.JPG" />
+<div class="caption">图：天坛 / Wikimedia Commons</div>
+
+---
+
+# 2026 的议题版图
+
+<div class="grid-3 mt-8">
+<div class="card"><div class="badge">Trade</div><h2>贸易与关税</h2><p>是否延续休兵、建立贸易沟通机制。</p></div>
+<div class="card"><div class="badge">AI</div><h2>AI 与芯片</h2><p>先进芯片出口、AI 安全与沟通渠道。</p></div>
+<div class="card"><div class="badge">Supply</div><h2>稀土与供应链</h2><p>关键矿产、产业链安全与相互依赖。</p></div>
+<div class="card"><div class="badge">Taiwan</div><h2>台湾问题</h2><p>军售、红线与危机管控。</p></div>
+<div class="card"><div class="badge">Iran</div><h2>伊朗/中东</h2><p>美方希望中国发挥影响力。</p></div>
+<div class="card"><div class="badge">Business</div><h2>企业利益</h2><p>波音、农业、能源、英伟达等被关注。</p></div>
+</div>
+
+---
+layout: two-cols
+layoutClass: gap-12
+---
+
+# 企业团：含义变了
+
+<div class="card mt-6">
+<h2>2017</h2>
+<p>更像“带着大订单来”。重点是展示合作规模，给市场和舆论一个积极画面。</p>
+</div>
+
+<div class="card mt-6">
+<h2>2026</h2>
+<p>更像“带着问题清单来”。重点是芯片、准入、供应链、投资限制等具体卡点。</p>
+</div>
+
+::right::
+
+<img class="photo-small" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" />
+<img class="photo-small mt-4" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" />
+<img class="photo-small mt-4" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop" />
+
+---
+
+# 2017 vs 2026
+
+<div class="grid-2 mt-8">
+<div class="glass">
+<div class="badge">2017</div>
+<h2>故宫</h2>
+<ul>
+<li>礼遇、历史、文明叙事</li>
+<li>大额订单与合作期待</li>
+<li>贸易逆差、朝核问题</li>
+<li>竞争尚未完全摊牌</li>
+</ul>
+</div>
+<div class="glass">
+<div class="badge">2026</div>
+<h2>天坛</h2>
+<ul>
+<li>秩序、稳定、风险控制</li>
+<li>AI、芯片、稀土、台湾</li>
+<li>企业来解决具体障碍</li>
+<li>竞争已经制度化</li>
+</ul>
+</div>
+</div>
+
+<div class="quote mt-10 text-center">
+从“扩大蛋糕”，到“划清边界”。
+</div>
+
+---
+class: section-red
+---
+
+# 我的观察
+
+<div class="grid-2 mt-10">
+<div class="glass">
+<h2>1. 仪式感本身就是谈判</h2>
+<p>故宫、天坛都不是随便选的地点；它们在给会谈加一层历史与秩序叙事。</p>
+</div>
+<div class="glass">
+<h2>2. 稳定已经是一种成果</h2>
+<p>当竞争足够深，能继续谈、能避免误判、能建立机制，本身就有价值。</p>
+</div>
+<div class="glass">
+<h2>3. 企业是缓冲器</h2>
+<p>商业利益仍能拉住关系，但它不再能单独决定中美关系方向。</p>
+</div>
+<div class="glass">
+<h2>4. 订单不是答案</h2>
+<p>2017 已经证明，大额签约可以改善气氛，但解决不了结构性不信任。</p>
+</div>
 </div>
 
 ---
@@ -22,223 +290,40 @@ layout: center
 class: text-center
 ---
 
-# 一句话概括
-
-川普两次访华，都不是单纯的外交礼仪。
-
-它们更像是中美关系阶段性状态的“可视化”：
-
-**2017：用盛大礼遇包装合作期待**  
-**2026：在高压竞争中寻找可控稳定**
-
----
-
-# 时间线
-
-| 时间 | 事件 | 关键词 |
-|---|---|---|
-| 2017-11-08 | 川普首次总统任内访华，抵达北京 | 国事访问、故宫 |
-| 2017-11-09 | 人民大会堂会谈、企业家活动、联合见记者 | 经贸、朝核、合作 |
-| 2017-11-10 | 离京赴越南参加 APEC | 亚洲行继续 |
-| 2026-05-13 | 川普时隔近九年再度抵京 | 第二任期、重返北京 |
-| 2026-05-14 | 人民大会堂会谈后同游天坛 | 贸易、AI、台湾、伊朗 |
-| 2026-05-15 | 预计继续会谈/茶叙/工作午餐后离华 | 稳定机制 |
-
----
-
-# 2017：最有记忆点的是“故宫外交”
-
-- 习近平夫妇陪同川普夫妇参观故宫前三殿
-- 茶叙、文物展示、京剧表演、故宫晚宴
-- 川普用平板展示外孙女中文视频，也成为传播点
-- 外界普遍将其视为高规格、强象征的接待安排
-
-> 这一幕的作用不只是“好看”，而是把中美关系放进历史与文明叙事里。
-
----
-
-# 2017：经贸成果很大，但问题没有消失
-
-公开资料显示，2017 年访问期间，双方宣布/签署超过 **2500 亿美元** 量级的商业与投资协议。
-
-典型领域包括：
-
-- 能源
-- 航空
-- 农业
-- 制造业
-- 汽车与工业设备
-
-但川普同时强调“公平、互惠”的贸易关系。  
-这说明：**签单能缓和气氛，但不能自动解决结构性分歧。**
-
----
-
-# 2017 的核心议题
-
-1. **贸易失衡**  
-   美方长期关注对华贸易逆差、市场准入、产业政策。
-
-2. **朝鲜半岛问题**  
-   川普公开要求中国在朝核问题上更快、更有效行动。
-
-3. **中美关系定位**  
-   双方话术强调合作、互利、管控分歧。
-
-4. **领导人个人关系**  
-   川普多次强调与习近平“chemistry”不错。
-
----
-layout: center
-class: text-center
----
-
-# 2017 之后的反差
-
-访问时的关键词是：
-
-**礼遇、合作、订单、伙伴**
-
-但不久后，中美关系进入：
-
-**关税战、科技限制、供应链重组、战略竞争**
-
-这就是回看 2017 最值得注意的地方：
-
-> 高规格访问可以制造窗口，但窗口不等于趋势本身改变。
-
----
-
-# 2026：再访华的背景变了
-
-2026 年这次访问，发生在更复杂的背景里：
-
-- 关税与贸易摩擦仍是主轴
-- AI、芯片、稀土、关键矿产成为新焦点
-- 台湾问题持续高敏感
-- 伊朗战争/中东局势进入议程
-- 企业代表团更偏向解决具体商业障碍
-
-与 2017 相比，气氛少了一些“蜜月感”，多了很多“风险管理”。
-
----
-
-# 2026：从故宫到天坛
-
-公开报道显示，2026 年访问中：
-
-- 川普 5 月 13 日晚抵达北京
-- 5 月 14 日在人民大会堂与习近平会谈
-- 会谈持续逾 2 小时
-- 会谈后两人同游天坛
-- 天坛被解读为高度象征性的外交场景
-
-如果说 2017 的故宫强调“历史厚度”，  
-那么 2026 的天坛更像强调“秩序、稳定、祈愿”。
-
----
-
-# 2026 的核心议题
-
-- **贸易与关税**：是否延续休兵、建立沟通机制
-- **AI 与芯片**：先进芯片出口、AI 沟通渠道
-- **稀土与关键供应链**：相互依赖下的谈判筹码
-- **台湾问题**：军售、红线、危机管理
-- **伊朗/中东**：美方希望中国发挥影响力
-- **企业利益**：波音、农业、能源、英伟达等议题被关注
-
----
-
-# 一个重要变化：企业团的含义变了
-
-2017 年：
-
-- 更像“带着大订单来”
-- 重点是展示合作规模
-
-2026 年：
-
-- 更像“带着问题清单来”
-- 重点是打开准入、芯片、供应链、投资限制等卡点
-
-这说明中美经贸关系已经从“扩大蛋糕”，转向“在竞争边界里重新划线”。
-
----
-layout: two-cols
-layoutClass: gap-12
----
-
-# 对比：2017 vs 2026
-
-| 维度 | 2017 | 2026 |
-|---|---|---|
-| 场景 | 故宫 | 天坛 |
-| 氛围 | 高规格礼遇 | 高压下稳定 |
-| 重点 | 订单、朝核、贸易逆差 | 贸易、AI、台湾、伊朗 |
-| 企业 | 大规模签约 | 解决具体障碍 |
-| 关系阶段 | 竞争尚未完全摊牌 | 竞争已制度化 |
-
-::right::
-
-# 变化背后
-
-2017 年的问题像“账本”：
-
-- 买多少
-- 卖多少
-- 逆差多少
-
-2026 年的问题更像“系统权限”：
-
-- 谁能拿到芯片
-- 谁控制关键矿产
-- 谁设定技术规则
-- 谁能承受供应链中断
-
----
-
-# 几点观察
-
-1. **仪式感不是装饰，是谈判的一部分**  
-   故宫、天坛都在给会谈加一层“历史叙事”。
-
-2. **中美关系已经从交易型问题升级为结构型问题**  
-   订单仍重要，但科技、安全、制度边界更重要。
-
-3. **稳定本身成了成果**  
-   在高度竞争下，能继续谈、能保持热线、能避免误判，已经有价值。
-
-4. **企业仍是中美关系的现实锚点**  
-   政治越紧，商业利益越会成为缓冲器，但缓冲器不是方向盘。
-
----
-layout: center
-class: text-center
----
-
-# 我的感想
-
-川普访华最有意思的地方，是它总能把中美关系的矛盾压缩到一个画面里：
-
-一边是红毯、晚宴、古建筑和友好措辞；  
-另一边是关税、芯片、台湾、战争与供应链。
-
-所以真正要看的，不只是领导人说了什么，
-而是访问之后：
-
-**哪些机制留下来了，哪些承诺兑现了，哪些分歧被暂时装进了盒子。**
+# 最后这张画面
+
+<div class="quote mt-8">
+红毯、古建筑、友好措辞，<br/>
+和关税、芯片、台湾、战争、供应链，<br/>
+同时出现在同一个外交场景里。
+</div>
+
+<div class="mt-10 text-2xl muted">
+这就是今天的中美关系：<br/>必须合作，但无法回到单纯合作。
+</div>
 
 ---
 
 # 资料来源
 
-- 中国外交部：2026 年 5 月 11 日宣布川普 5 月 13–15 日访华
-- 中国外交部：2026 年 5 月 14 日中美元首人民大会堂会谈消息
-- 白宫档案：2017 年 11 月 9 日联合记者会、企业活动讲话
-- Reuters：2026 年访华议题、企业代表团、AI/台湾/伊朗等报道
-- BBC 中文：2026 年会谈逾 2 小时、会后同游天坛报道
-- Xinhua / SCMP / CNBC 等关于 2017 故宫行程和经贸协议的公开报道
+<div class="grid-2 mt-6">
+<div>
 
-<div class="opacity-60 text-sm pt-4">
+- 中国外交部：2026 年 5 月 11 日访华公告
+- 中国外交部：2026 年 5 月 14 日中美元首会谈消息
+- 白宫档案：2017 年联合记者会、企业活动讲话
+- Reuters：2026 年访华议题、企业代表团、AI/台湾/伊朗报道
+
+</div>
+<div>
+
+- BBC 中文：2026 年会谈逾 2 小时、同游天坛报道
+- Xinhua / SCMP / CNBC：2017 故宫行程与经贸协议报道
+- Wikimedia Commons / Unsplash：页面配图素材
+
+</div>
+</div>
+
+<div class="opacity-60 text-sm pt-8">
 注：2026 年访问仍在进行中，后续成果可能继续更新。
 </div>
