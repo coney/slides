@@ -4,8 +4,8 @@ import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
 const decks = [
   {
     slug: 'demo',
-    title: 'Demo Deck',
-    description: '多 PPT 展示结构示例',
+    title: 'Slidev Demo',
+    description: '排版 · 代码 · 图表 · Mermaid · 动画 — 合并展示',
     entry: 'decks/demo/slides.md',
   },
   {
