@@ -14,6 +14,12 @@ const decks = [
     description: '2017 记录、2026 动态与几点观察',
     entry: 'decks/trump-china-visits/slides.md',
   },
+  {
+    slug: 'visualization-stack',
+    title: 'ECharts + Vue-ECharts + Mermaid',
+    description: '数据图表、Vue 组件与流程图的组合演示',
+    entry: 'decks/visualization-stack/slides.md',
+  },
 ]
 
 rmSync('dist', { recursive: true, force: true })
