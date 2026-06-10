@@ -55,12 +55,16 @@ class: deck
 
 # 五个节点，看关系转向
 
-<div class="timeline">
-  <div class="titem"><div class="tdate">2017.11.08</div><div class="ttext">抵达北京，故宫成为访问第一幕。</div></div>
-  <div class="titem"><div class="tdate">2017.11.09</div><div class="ttext">人民大会堂会谈，宣布超 2500 亿美元量级协议。</div></div>
-  <div class="titem"><div class="tdate">2018 起</div><div class="ttext">关税战、科技限制、供应链重组抬头。</div></div>
-  <div class="titem"><div class="tdate">2026.05.13</div><div class="ttext">时隔近九年，川普第二任期再度抵京。</div></div>
-  <div class="titem"><div class="tdate">2026.05.14</div><div class="ttext">会谈逾两小时，随后同游天坛。</div></div>
+```mermaid
+flowchart LR
+  A["2017.11.08<br/>抵达北京 · 故宫"] --> B["2017.11.09<br/>会谈 · 商业协议"]
+  B --> C["2018 起<br/>关税与科技竞争"]
+  C --> D["2026.05.13<br/>再度抵京"]
+  D --> E["2026.05.14<br/>会谈 · 天坛"]
+```
+
+<div class="panel compact mt-5">
+关系主轴从“扩大合作窗口”，逐步转向“管理竞争风险”。
 </div>
 
 ---
@@ -141,14 +145,59 @@ class: deck
 
 # 议题已经升级
 
-<div class="grid3 mt-8">
-  <div class="visual-card"><div class="badge">01</div><h2>贸易</h2><p class="mini">关税休兵、沟通机制、采购安排。</p></div>
-  <div class="visual-card"><div class="badge">02</div><h2>AI / 芯片</h2><p class="mini">先进芯片出口与 AI 沟通渠道。</p></div>
-  <div class="visual-card"><div class="badge">03</div><h2>稀土</h2><p class="mini">关键矿产与供应链筹码。</p></div>
-  <div class="visual-card"><div class="badge">04</div><h2>台湾</h2><p class="mini">军售、红线与危机管控。</p></div>
-  <div class="visual-card"><div class="badge">05</div><h2>伊朗</h2><p class="mini">中东局势与中国影响力。</p></div>
-  <div class="visual-card"><div class="badge">06</div><h2>企业</h2><p class="mini">波音、农业、能源、英伟达等。</p></div>
-</div>
+<script setup>
+const agendaOption = {
+  backgroundColor: 'transparent',
+  tooltip: {},
+  legend: {
+    bottom: 0,
+    textStyle: { color: '#dbeafe' },
+    data: ['2017', '2026'],
+  },
+  radar: {
+    radius: '67%',
+    center: ['50%', '48%'],
+    splitNumber: 4,
+    axisName: { color: '#e0f2fe', fontSize: 14 },
+    splitArea: {
+      areaStyle: { color: ['rgba(34,211,238,.03)', 'rgba(244,114,182,.03)'] },
+    },
+    splitLine: { lineStyle: { color: 'rgba(148,163,184,.25)' } },
+    axisLine: { lineStyle: { color: 'rgba(148,163,184,.28)' } },
+    indicator: [
+      { name: '贸易', max: 5 },
+      { name: 'AI / 芯片', max: 5 },
+      { name: '供应链', max: 5 },
+      { name: '台湾', max: 5 },
+      { name: '地区安全', max: 5 },
+      { name: '企业合作', max: 5 },
+    ],
+  },
+  series: [{
+    type: 'radar',
+    data: [
+      {
+        name: '2017',
+        value: [5, 1, 2, 2, 3, 5],
+        lineStyle: { width: 3, color: '#22d3ee' },
+        itemStyle: { color: '#22d3ee' },
+        areaStyle: { color: 'rgba(34,211,238,.18)' },
+      },
+      {
+        name: '2026',
+        value: [4, 5, 5, 5, 4, 3],
+        lineStyle: { width: 3, color: '#f472b6' },
+        itemStyle: { color: '#f472b6' },
+        areaStyle: { color: 'rgba(244,114,182,.18)' },
+      },
+    ],
+  }],
+}
+</script>
+
+<Chart :option="agendaOption" height="355px" />
+
+<div class="caption">议题强度为演示性归纳，用于比较两次访问的议程重心，不代表统计评分。</div>
 
 ---
 class: deck

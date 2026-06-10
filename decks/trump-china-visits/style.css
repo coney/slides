@@ -37,3 +37,6 @@
 .visual-card{ min-height:165px; background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.14); border-radius:24px; padding:20px; }
 ul.clean{ list-style:none; padding:0; margin:18px 0 0; } ul.clean li{ margin:10px 0; font-size:18px; }
 .footer-note{ position:absolute; left:54px; bottom:34px; font-size:12px; color:#c4b5fd; }
+.chart{ width:100%; }
+.mermaid{ display:flex; justify-content:center; margin-top:30px; }
+.mermaid svg{ max-height:300px; }
